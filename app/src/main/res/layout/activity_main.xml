@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="1dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="900dp"
+        android:layout_marginHorizontal="16dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/download"
+        app:layout_constrainedHeight="true"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="327dp"
+        android:layout_height="38dp"
+        android:text="Your BMI"
+        android:textColor="#090909"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.724"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.132" />
+
+    <TextView
+        android:id="@+id/textans"
+        android:layout_width="332dp"
+        android:layout_height="108dp"
+        android:text="Calculate Your BMI"
+        android:textColor="#090909"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texttitle"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <TextView
+        android:id="@+id/resulttitle"
+        android:layout_width="338dp"
+        android:layout_height="53dp"
+        android:text="Result Title"
+        android:textColor="#090909"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.686"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textans"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <EditText
+        android:id="@+id/Weight"
+        android:layout_width="329dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="316dp"
+        android:textColor="#090909"
+        android:ems="10"
+        android:hint="Weight in kg"
+        android:textStyle="bold"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resulttitle"
+        app:layout_constraintVertical_bias="0.559" />
+
+    <EditText
+        android:id="@+id/heightfeet"
+        android:layout_width="161dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:textColor="#090909"
+        android:textStyle="bold"
+        android:hint="Height(in feet)"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Weight"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <EditText
+        android:id="@+id/heightinches"
+        android:layout_width="156dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:textStyle="bold"
+        android:hint="Height(in inches)"
+        android:textColorHighlight="#121212"
+        android:textColor="#090909"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.874"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Weight"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resulttitle"
+        app:layout_constraintVertical_bias="0.623" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
